@@ -40,10 +40,10 @@
             bindings = <&mo 1>, <&mo 3>;
         };
 
-        ht_layer: ht_layer {
+        HMR: HMR {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_LAYER";
-            bindings = <&mo>, <&kp>;
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -52,75 +52,48 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        combo1 {
-            bindings = <&kp UP>;
-            key-positions = <8 9>;
-        };
-
-        combo2 {
-            bindings = <&kp DOWN>;
-            key-positions = <20 21>;
-        };
-
-        combo3 {
-            bindings = <&caps_word>;
-            key-positions = <13 14>;
-        };
-
-        combo4 {
-            bindings = <&kp LEFT>;
-            key-positions = <7 8>;
-        };
-
-        combo5 {
-            bindings = <&kp RIGHT>;
-            key-positions = <9 10>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
 
-        layer0 {
-            label = "0";
+        default_layer {
+            label = "QWERTY";
             bindings = <
-&td0       &kp Q  &kp W  &kp E         &kp R         &kp T              &kp Y      &kp U     &kp I          &kp O    &kp P          &ht_layer 2 BACKSPACE
-&kp LSHFT  &kp A  &kp S  &kp D         &kp F         &kp G              &kp H      &kp J     &kp K          &kp L    &kp SEMICOLON  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp V         &kp B              &kp N      &kp M     &kp COMMA      &kp DOT  &kp FSLH       &td3
-                         &kp LEFT_ALT  &kp LEFT_GUI  &ht LSHFT SPACE    &kp ENTER  &kp RALT  &kp RIGHT_WIN
+&HMR LEFT_COMMAND TAB     &kp Q  &kp W  &kp E         &kp R  &kp T                  &kp Y        &kp U  &kp I          &kp O    &kp P                &kp BACKSPACE
+&HMR LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D         &kp F  &kp G                  &kp H        &kp J  &kp K          &kp L    &HMR RIGHT_ALT SEMI  &HMR RIGHT_CONTROL APOSTROPHE
+&kp LEFT_SHIFT            &kp Z  &kp X  &kp C         &kp V  &kp B                  &kp N        &kp M  &kp COMMA      &kp DOT  &kp FSLH             &kp RIGHT_SHIFT
+                                        &kp LEFT_ALT  &mo 1  &HMR LEFT_WIN SPACE    &lt 3 ENTER  &mo 2  &kp RIGHT_WIN
             >;
         };
 
-        layer1 {
-            label = "1";
+        lower_layer {
+            label = "NUMSYMB";
             bindings = <
-&kp BACKSLASH  &kp N1  &kp N2  &kp N3        &kp N4        &kp N5             &kp N6   &kp N7         &kp N8         &kp N9            &kp N0             &kp BSPC
-&kp LSHFT      &kp A   &none   &none         &none         &none              &none    &none          &none          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE
-&kp LCTRL      &none   &none   &none         &none         &none              &none    &none          &kp COMMA      &kp PERIOD        &kp MINUS          &kp EQUAL
-                               &kp LEFT_ALT  &kp LEFT_GUI  &ht LSHFT SPACE    &kp RET  &kp RIGHT_ALT  &kp RIGHT_GUI
+&HMR LEFT_WIN TAB         &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT    &kp CARET      &kp AMPERSAND  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
+&HMR LEFT_CONTROL ESCAPE  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &kp MINUS      &kp EQUAL      &kp BACKSLASH   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
+&kp LEFT_SHIFT            &kp NUMBER_6     &kp N7        &kp N8        &kp N9        &kp N0         &kp GRAVE      &kp PLUS       &kp UNDERSCORE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE
+                                                         &kp LEFT_ALT  &trans        &kp SPACE      &kp RIGHT_WIN  &kp DELETE     &kp RIGHT_ALT
             >;
         };
 
-        layer2 {
-            label = "2";
+        raise_layer {
+            label = "NAVIGATION";
             bindings = <
-&kp TAB    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
-&kp LCTRL  &none            &none        &none         &none       &none          &kp MINUS  &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH          &kp GRAVE
-&kp LSHFT  &none            &none        &none         &none       &none          &kp UNDER  &kp PLUS       &kp LBRC          &kp RBRC              &kp PIPE               &kp TILDE
-                                         &kp LEFT_GUI  &kp LSHFT   &kp SPACE      &kp RET    &trans         &kp RIGHT_GUI
+&kp TAB     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6    &kp F7    &kp F8   &kp F9     &kp F10        &kp BSPC
+&kp ESCAPE  &kp F11       &kp F12       &trans        &trans        &none           &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp PG_UP      &kp CAPSLOCK
+&kp LSHFT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp HOME  &kp END   &kp INS  &trans     &kp PAGE_DOWN  &trans
+                                        &bt BT_CLR    &trans        &kp LEFT_WIN    &kp RET   &trans    &trans
             >;
         };
 
-        layer3 {
-            label = "3";
+        layer_3 {
+            label = "SHORTCUTS";
             bindings = <
-&sys_reset  &none         &none         &none         &none         &none             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none     &none     &none
-&kp LSHFT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none     &kp UP    &none
-&kp LCTRL   &bt BT_CLR    &none         &none         &none         &bt BT_CLR_ALL    &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LEFT  &kp DOWN  &kp RIGHT
-                                        &kp LEFT_ALT  &kp LEFT_GUI  &td3              &kp N0           &kp N0           &kp KP_DOT
+&kp LG(LA(ESCAPE))  &kp C_PREVIOUS  &kp C_PP        &kp C_NEXT      &none           &kp LS(LG(T))     &trans         &kp LG(Z)           &kp LG(LS(Z))        &kp LG(LS(G))  &none              &none
+&kp CAPSLOCK        &trans          &kp LS(LG(N2))  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LG(N5))    &kp LS(LA(H))  &kp LG(LEFT_BRACE)  &kp LG(RIGHT_BRACE)  &kp LS(LA(L))  &trans             &none
+&kp GLOBE           &trans          &none           &kp LG(C)       &kp LG(V)       &kp LS(LG(V))     &kp LS(LA(B))  &kp LA(EQUAL)       &kp C_VOLUME_UP      &kp C_MUTE     &kp C_VOLUME_DOWN  &trans
+                                                    &kp LEFT_SHIFT  &trans          &kp LG(SPACE)     &trans         &trans              &trans
             >;
         };
     };
