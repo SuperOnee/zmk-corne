@@ -1,0 +1,14 @@
+file_format: "1"
+id: corne_c
+name: corne_c
+type: shield
+url: https://github.com/felixm12138/corne
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - studio
+siblings:
+  - corne_c_left
+  - corne_c_right

@@ -1,0 +1,2 @@
+# ZMK Corne Config
+
