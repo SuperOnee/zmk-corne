@@ -60,9 +60,9 @@
         default_layer {
             label = "QWERTY";
             bindings = <
-&HMR LEFT_COMMAND TAB     &kp Q  &kp W  &kp E         &kp R  &kp T                  &kp Y        &kp U  &kp I          &kp O    &kp P                &kp BACKSPACE
-&HMR LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D         &kp F  &kp G                  &kp H        &kp J  &kp K          &kp L    &HMR RIGHT_ALT SEMI  &HMR RIGHT_CONTROL APOSTROPHE
-&kp LEFT_SHIFT            &kp Z  &kp X  &kp C         &kp V  &kp B                  &kp N        &kp M  &kp COMMA      &kp DOT  &kp FSLH             &kp RIGHT_SHIFT
+&HMR LEFT_COMMAND TAB     &kp Q  &kp W  &kp E         &kp R  &kp T                  &kp Y        &kp U  &kp I          &kp O       &kp P                &kp BACKSPACE
+&HMR LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D         &kp F  &kp G                  &kp H        &kp J  &kp K          &kp L       &HMR RIGHT_ALT SEMI  &HMR RIGHT_CONTROL APOSTROPHE
+&kp LEFT_SHIFT            &kp Z  &kp X  &kp C         &kp V  &kp B                  &kp N        &kp M  &kp COMMA      &kp PERIOD  &kp FSLH             &kp RIGHT_SHIFT
                                         &kp LEFT_ALT  &mo 1  &HMR LEFT_WIN SPACE    &lt 3 ENTER  &mo 2  &kp RIGHT_WIN
             >;
         };
@@ -81,19 +81,19 @@
             label = "NAVIGATION";
             bindings = <
 &kp TAB     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6    &kp F7    &kp F8   &kp F9     &kp F10        &kp BSPC
-&kp ESCAPE  &kp F11       &kp F12       &trans        &trans        &none           &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp PG_UP      &kp CAPSLOCK
-&kp LSHFT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp HOME  &kp END   &kp INS  &trans     &kp PAGE_DOWN  &trans
-                                        &bt BT_CLR    &trans        &kp LEFT_WIN    &kp RET   &trans    &trans
+&kp ESCAPE  &kp F11       &kp F12       &none         &none         &none           &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp PG_UP      &kp CAPSLOCK
+&kp LSHFT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp HOME  &kp END   &kp INS  &none      &kp PAGE_DOWN  &none
+                                        &bt BT_CLR    &none         &kp LEFT_WIN    &kp RET   &none     &none
             >;
         };
 
         layer_3 {
             label = "SHORTCUTS";
             bindings = <
-&kp LG(LA(ESCAPE))  &kp C_PREVIOUS  &kp C_PP        &kp C_NEXT      &none           &kp LS(LG(T))     &trans         &kp LG(Z)           &kp LG(LS(Z))        &kp LG(LS(G))  &none              &none
-&kp CAPSLOCK        &trans          &kp LS(LG(N2))  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LG(N5))    &kp LS(LA(H))  &kp LG(LEFT_BRACE)  &kp LG(RIGHT_BRACE)  &kp LS(LA(L))  &trans             &none
-&kp GLOBE           &trans          &none           &kp LG(C)       &kp LG(V)       &kp LS(LG(V))     &kp LS(LA(B))  &kp LA(EQUAL)       &kp C_VOLUME_UP      &kp C_MUTE     &kp C_VOLUME_DOWN  &trans
-                                                    &kp LEFT_SHIFT  &trans          &kp LG(SPACE)     &trans         &trans              &trans
+&kp LG(LA(ESCAPE))  &kp C_PREVIOUS  &kp C_PP        &kp C_NEXT      &none           &kp LS(LG(T))     &none          &kp LG(Z)           &kp LG(LS(Z))        &kp LG(LS(G))  &none              &none
+&kp CAPSLOCK        &none           &kp LS(LG(N2))  &kp LS(LG(N3))  &kp LS(LG(N4))  &kp LS(LG(N5))    &kp LS(LA(H))  &kp LG(LEFT_BRACE)  &kp LG(RIGHT_BRACE)  &kp LS(LA(L))  &none              &none
+&kp GLOBE           &none           &none           &kp LG(C)       &kp LG(V)       &kp LS(LG(V))     &kp LS(LA(B))  &kp LA(EQUAL)       &kp C_VOLUME_UP      &kp C_MUTE     &kp C_VOLUME_DOWN  &none
+                                                    &kp LEFT_SHIFT  &none           &kp LG(SPACE)     &none          &none               &none
             >;
         };
     };
