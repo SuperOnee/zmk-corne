@@ -102,8 +102,8 @@ layers:
   - ESCAPE
   - F11
   - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - ''
   - LEFT
   - DOWN
@@ -120,15 +120,15 @@ layers:
   - HOME
   - END
   - INS
-  - {t: ▽, type: trans}
+  - ''
   - PAGE DOWN
-  - {t: ▽, type: trans}
+  - ''
   - BT CLR
-  - {t: ▽, type: trans}
+  - ''
   - LEFT WIN
   - RET
   - {type: held}
-  - {t: ▽, type: trans}
+  - ''
   SHORTCUTS:
   - Gui+Alt+ESCAPE
   - PREVIOUS
@@ -136,14 +136,14 @@ layers:
   - NEXT
   - ''
   - Sft+Gui+T
-  - {t: ▽, type: trans}
+  - ''
   - Gui+Z
   - Gui+Sft+Z
   - Gui+Sft+G
   - ''
   - ''
   - CAPSLOCK
-  - {t: ▽, type: trans}
+  - ''
   - Sft+Gui+2
   - Sft+Gui+3
   - Sft+Gui+4
@@ -152,10 +152,10 @@ layers:
   - Gui+{
   - Gui+}
   - Sft+Alt+L
-  - {t: ▽, type: trans}
+  - ''
   - ''
   - GLOBE
-  - {t: ▽, type: trans}
+  - ''
   - ''
   - Gui+C
   - Gui+V
@@ -165,10 +165,10 @@ layers:
   - VOLUME UP
   - MUTE
   - VOLUME DOWN
-  - {t: ▽, type: trans}
+  - ''
   - LEFT SHIFT
-  - {t: ▽, type: trans}
+  - ''
   - Gui+SPACE
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
