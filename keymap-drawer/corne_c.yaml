@@ -1,0 +1,174 @@
+layout: {zmk_keyboard: corne_c}
+layers:
+  QWERTY:
+  - {t: TAB, h: LEFT COMMAND}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BACKSPACE
+  - {t: ESCAPE, h: LEFT CONTROL}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, h: RIGHT ALT}
+  - {t: '''', h: RIGHT CONTROL}
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RIGHT SHIFT
+  - LEFT ALT
+  - NUMSYMB
+  - {t: SPACE, h: LEFT WIN}
+  - {t: ENTER, h: SHORTCUTS}
+  - NAVIGATION
+  - RIGHT WIN
+  NUMSYMB:
+  - {t: TAB, h: LEFT WIN}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - BSPC
+  - {t: ESCAPE, h: LEFT CONTROL}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '-'
+  - '='
+  - \
+  - '{'
+  - '}'
+  - '|'
+  - LEFT SHIFT
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '`'
+  - +
+  - _
+  - '['
+  - ']'
+  - '~'
+  - LEFT ALT
+  - {type: held}
+  - SPACE
+  - RIGHT WIN
+  - DELETE
+  - RIGHT ALT
+  NAVIGATION:
+  - TAB
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - BSPC
+  - ESCAPE
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - PG UP
+  - CAPSLOCK
+  - LSHFT
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - HOME
+  - END
+  - INS
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - {t: ▽, type: trans}
+  - BT CLR
+  - {t: ▽, type: trans}
+  - LEFT WIN
+  - RET
+  - {type: held}
+  - {t: ▽, type: trans}
+  SHORTCUTS:
+  - Gui+Alt+ESCAPE
+  - PREVIOUS
+  - PP
+  - NEXT
+  - ''
+  - Sft+Gui+T
+  - {t: ▽, type: trans}
+  - Gui+Z
+  - Gui+Sft+Z
+  - Gui+Sft+G
+  - ''
+  - ''
+  - CAPSLOCK
+  - {t: ▽, type: trans}
+  - Sft+Gui+2
+  - Sft+Gui+3
+  - Sft+Gui+4
+  - Sft+Gui+5
+  - Sft+Alt+H
+  - Gui+{
+  - Gui+}
+  - Sft+Alt+L
+  - {t: ▽, type: trans}
+  - ''
+  - GLOBE
+  - {t: ▽, type: trans}
+  - ''
+  - Gui+C
+  - Gui+V
+  - Sft+Gui+V
+  - Sft+Alt+B
+  - Alt+=
+  - VOLUME UP
+  - MUTE
+  - VOLUME DOWN
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - Gui+SPACE
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
